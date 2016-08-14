@@ -18,4 +18,4 @@ xmacroplay -d 60 < test.txt
 
 See this video.
 
-https://youtu.be/uCpKz-IYOrU
+[video](https://youtu.be/uCpKz-IYOrU)

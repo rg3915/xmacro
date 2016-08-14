@@ -16,6 +16,4 @@ To execute type
 xmacroplay -d 60 < test.txt
 ```
 
-See this video.
-
-[video](https://youtu.be/uCpKz-IYOrU)
+See this [video](https://youtu.be/uCpKz-IYOrU).

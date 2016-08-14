@@ -35,13 +35,15 @@ String clear
 KeyStrPress Return KeyStrRelease Return
 EOF
 
-cat << EOF > temp/voltarnivel.txt
-String cd ..
+cat << EOF > temp/entarnapasta.txt
+String mkdir pasta_teste
+KeyStrPress Return KeyStrRelease Return
+String cd pasta_teste
 KeyStrPress Return KeyStrRelease Return
 EOF
 
 cat << EOF > temp/digitar.txt
-String source base.sh
+String source xmacroexample.sh
 EOF
 
 
@@ -62,8 +64,8 @@ for i in $(seq 1 5); do xmacroplay -d 3 < temp/zoom.txt; done
 xmacroplay -d 3 < temp/limpar.txt
 # listar arquivos
 xmacroplay -d 3 < temp/list.txt
-# voltar 1 nivel
-xmacroplay -d 3 < temp/voltarnivel.txt
+# entrar na pasta
+xmacroplay -d 3 < temp/entarnapasta.txt
 # alternar
 xmacroplay -d 3 < temp/alternar.txt
 # digitar

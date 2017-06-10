@@ -43,7 +43,7 @@ KeyStrPress Return KeyStrRelease Return
 EOF
 
 cat << EOF > temp/digitar.txt
-String source xmacroexample.sh
+String source 01.sh
 EOF
 
 

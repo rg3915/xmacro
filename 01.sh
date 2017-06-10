@@ -116,8 +116,30 @@ KeyStrPress Return KeyStrRelease Return
 KeyStrPress Return KeyStrRelease Return
 EOF
 
-cat << EOF > temp/.txt
-String 
+cat << EOF > temp/list_comprehension1.txt
+String letras = ['a', 'b', 'c', 'd', 'e']
+KeyStrPress Return KeyStrRelease Return
+String lista = []
+KeyStrPress Return KeyStrRelease Return
+String for letra in letras:
+KeyStrPress Return KeyStrRelease Return
+String     lista.append(letra)
+KeyStrPress Return KeyStrRelease Return
+KeyStrPress Return KeyStrRelease Return
+String print('lista:', lista)
+KeyStrPress Return KeyStrRelease Return
+EOF
+
+cat << EOF > temp/list_comprehension2.txt
+KeyStrPress Return KeyStrRelease Return
+String nova_lista = []
+KeyStrPress Left KeyStrRelease Left
+EOF
+
+cat << EOF > temp/list_comprehension3.txt
+String letra for letra in letras
+KeyStrPress Return KeyStrRelease Return
+String print('nova_lista:', nova_lista)
 KeyStrPress Return KeyStrRelease Return
 EOF
 
@@ -202,6 +224,21 @@ xmacroplay -d 3 < temp/alternar.txt
 continuar
 
 xmacroplay -d 60 < temp/notafinal4.txt # velocity 60
+xmacroplay -d 3 < temp/alternar.txt
+
+continuar
+
+xmacroplay -d 90 < temp/list_comprehension1.txt # velocity 90
+xmacroplay -d 3 < temp/alternar.txt
+
+continuar
+
+xmacroplay -d 90 < temp/list_comprehension2.txt # velocity 90
+xmacroplay -d 3 < temp/alternar.txt
+
+continuar
+
+xmacroplay -d 90 < temp/list_comprehension3.txt # velocity 90
 xmacroplay -d 3 < temp/alternar.txt
 
 continuar
